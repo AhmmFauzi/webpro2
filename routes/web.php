@@ -16,22 +16,26 @@ $layanan = [
     [
         "nama" => "Cuci Kering",
         "deskripsi" => "Cepat dan wangi",
-        "gambar" => "images/icons/cuci-kering.png"
+        "gambar" => "images/icons/cuci-kering.png",
+        "detail" => "Layanan cuci tanpa setrika, cocok untuk pakaian santai. Proses cepat dengan hasil bersih dan wangi."
     ],
     [
         "nama" => "Cuci Setrika",
         "deskripsi" => "Rapi siap pakai",
-        "gambar" => "images/icons/cuci-setrika.png"
+        "gambar" => "images/icons/cuci-setrika.png",
+        "detail" => "Pakaian dicuci dan disetrika hingga rapi. Siap langsung dipakai tanpa perlu repot lagi."
     ],
     [
         "nama" => "Setrika",
         "deskripsi" => "Licin dan halus",
-        "gambar" => "images/icons/setrika.png"
+        "gambar" => "images/icons/setrika.png",
+        "detail" => "Khusus setrika saja. Pakaian dijamin licin, rapi, dan bebas kusut."
     ],
     [
         "nama" => "Express",
         "deskripsi" => "Selesai dalam 24 jam",
-        "gambar" => "images/icons/express.png"
+        "gambar" => "images/icons/express.png",
+        "detail" => "Layanan super cepat, selesai dalam 1 hari. Cocok untuk kebutuhan mendesak."
     ],
 ];
 
