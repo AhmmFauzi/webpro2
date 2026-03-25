@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| DATA (biar tidak nulis ulang)
+| DATA
 |--------------------------------------------------------------------------
 */
 
@@ -36,27 +36,21 @@ $layanan = [
 ];
 
 $harga = [
-    ["nama" => "Cuci Kering", "harga" => "Rp5.000 / kg"],
-    ["nama" => "Cuci + Setrika", "harga" => "Rp7.000 / kg"],
-    ["nama" => "Setrika Saja", "harga" => "Rp4.000 / kg"],
-    ["nama" => "Express", "harga" => "Rp10.000 / kg"],
+    ["nama" => "Cuci Kering", "harga" => "Rp5.000 per kg"],
+    ["nama" => "Cuci + Setrika", "harga" => "Rp7.000 per kg"],
+    ["nama" => "Setrika Saja", "harga" => "Rp4.000 per kg"],
+    ["nama" => "Express", "harga" => "Rp10.000 per kg"],
 ];
 
 /*
 |--------------------------------------------------------------------------
-| ROUTE HOME
+| ROUTE
 |--------------------------------------------------------------------------
 */
 
 Route::get('/', function () use ($nama, $deskripsi, $kontak, $layanan, $harga) {
     return view('home', compact('nama','deskripsi','kontak','layanan','harga'));
 });
-
-/*
-|--------------------------------------------------------------------------
-| ROUTE LAYANAN
-|--------------------------------------------------------------------------
-*/
 
 Route::get('/layanan', function () use ($layanan, $nama, $kontak) {
     return view('layanan', compact('layanan','nama','kontak'));
